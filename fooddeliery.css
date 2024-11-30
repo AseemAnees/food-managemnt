@@ -1,0 +1,249 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* navigation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+
+}
+
+/* Navigation bar:logo and images */
+
+#logo {
+    margin: 23px 17px;
+}
+
+img {
+    margin: -28px 3px;
+    height: 108px;
+    width: 108px;
+}
+
+/* navigation bar:list styling */
+
+#navbar ul {
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+
+#navbar ul li {
+
+    font-size: 1.2rem;
+    list-style: none;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 6px 13px;
+    text-decoration: none;
+    color: white;
+    border-radius: 21px;
+    transition: all 1s;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+
+}
+
+/* home section  */
+
+#home::before {
+    content: "";
+    background: url('/img/bg\ food.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 577px;
+    width: 100%;
+    opacity: 0.9;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 12px;
+    height: 481px;
+}
+
+#home h1 {
+    font-size: 2.8rem;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-family: "Bree Serif", serif;
+}
+
+#home p {
+    font-size: 1.8rem;
+    color: white;
+    text-align: center;
+    font-family: "Bree Serif", serif;
+}
+
+/* services section */
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 39px;
+    margin: 3px;
+    border-radius: 23px;
+    background-color: #dddddd;
+}
+
+#services .box img {
+    height: 160px;
+    display: block;
+    margin: auto;
+    width: 223px;
+}
+
+#services .box p {
+    font-family: "Bree Serif", serif;
+}
+
+/* client section */
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('/img/store.jpg');
+    z-index: -1;
+    opacity: 0.4;
+    width: 100%;
+    height: 74%;
+}
+
+
+#client-section {
+    /* height: 463px; */
+    /* position: relative; */
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 26px;
+
+}
+
+#clients img {
+    height: 92px;
+    width: 189px;
+}
+
+.cleint-item {
+    padding: 34px;
+}
+
+/* contact section */
+
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url("/img/contact\ food.jpg") no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 12px;
+    font-size: 1.3rem;
+
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: "Bree Serif", serif;
+}
+
+/* utility classes */
+
+.btn {
+    padding: 8px 11px;
+    margin: 13px;
+    border: 2px solid white;
+    background-color: brown;
+    border-radius: 18px;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(162, 83, 83);
+}
+
+.h-primary {
+    font-size: 3.5rem;
+    padding: 12px;
+    font-family: "Bree Serif", serif;
+}
+
+.h-secondry {
+    font-size: 1.9rem;
+    font-family: "Bree Serif", serif;
+    /* padding: 12px; */
+}
+
+.center {
+    text-align: center;
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 9px 12px;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
